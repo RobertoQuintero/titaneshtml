@@ -1,0 +1,62 @@
+//font-family
+$fontLato: 'Lato', sans-serif;
+
+//font-size
+$fontSize-n :   16px;
+$fontSize-s :   $fontSize-n * .9;
+$fontSize-xs:   $fontSize-n * .8;
+$fontSize-m :   $fontSize-n * 1.2;
+$fontSize-l :   $fontSize-n * 1.7;
+$fontSize-xl:   $fontSize-n * 2.5;
+//Colors
+$blue   :   #007bff;
+$blue-two: #3369e7;
+$white  :   #fff;
+$black  :   #000;
+$red    :   #dc3545;
+$accent :   #f1a000;
+//text-color
+$textColor-normal: #666;
+$textColor-strong: #333;
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+//z-index
+$z-back     :-10;
+$z-normal   :1  ;
+$z-tooltip  :10;
+$z-fixed    :100;
+$z-overlay  :1000; 
+
+body{
+    font-family: $fontLato;
+    font-size: $fontSize-n;
+    color: $black;
+    overflow-x: hidden;
+    height: 100%;
+}
+a{
+    display: block;
+    text-decoration: none;
+    // text-align: center;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    
+}
+
+h1,h2,h3,h4,h5,h6{
+    letter-spacing: 1px;
+    color: $textColor-strong;  
+}

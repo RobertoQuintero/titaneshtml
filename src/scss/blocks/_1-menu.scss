@@ -1,0 +1,87 @@
+.header{
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.navbar{
+  @include flex(space-between);
+  position: relative;
+}
+.navbrand-link h2{
+  color: $accent;
+  font-size: $fontSize-m;
+}
+.main-menu{
+  position: absolute;
+  border-radius: 4px 0 0 4px;
+  z-index: $z-fixed;
+  top: 2.7em;
+  // height: 1000px;
+  width: 60%;
+  right: 0;
+  transform: translateX(150%);
+  // display: none;
+  text-align: left;
+  transition: .5s;
+
+  &_link{
+    padding: 0.5rem 1em;
+    color: $accent;
+    transition: .3s;
+    font-size: $fontSize-m;
+    &:hover{
+      background-color: $accent;
+      color: $black;
+    }
+  }
+  @media (min-width:990px){
+    position: static;
+    height: auto;
+    transform: translateX(0);
+    background-color: none;
+    display: block;
+    
+    @include flex(space-between);
+    flex-basis: 30%;
+    &_link{
+      color: $black;
+    }
+  }
+}
+.navtoggle{
+  display: block;
+  @media (min-width:990px){
+    display: none;
+  }
+  
+}
+.button-cta{
+  padding:.5rem 1rem;
+  font-size: $fontSize-m;
+  border: 1px solid $black;
+  border-radius: 4px;
+  background-color: $white;
+  color: $black;
+  cursor: pointer;
+  transition: .4s;
+  &:hover{
+    background-color: $black;
+    color: $white;
+  }
+}
+.gradient-color{
+  background: #373B44;  /* fallback for old browsers */
+  background: linear-gradient(to right, #000, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  @media screen and (min-width:990px){
+    background: none;
+  }
+}
+.show{
+  transform: translateX(20%);
+  @media (min-width:540px){
+    transform: translateX(60%);
+  }
+  @media (min-width:990px){
+    transform: translateX(0);
+  }
+}
