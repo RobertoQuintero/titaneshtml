@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;300;400;500;600;700&display=swap');
+
+
+.paragraph,.title{
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.title{
+  font-size: $fontSize-l;
+}
+.paragraph{
+  padding-top: 2rem;
+}

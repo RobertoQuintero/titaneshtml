@@ -2,6 +2,7 @@
 @import 'base/reset';
 @import 'base/layout';
 @import 'base/mixins';
+@import 'base/typography';
 
 //libraries
 @import 'libraries/font-awesome';
@@ -11,6 +12,7 @@
 //blocks
 @import './blocks/1-menu';
 @import './blocks/2-banner';
+@import './blocks/3-bio';
 
 
 

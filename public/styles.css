@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;300;400;500;600;700&display=swap");
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -108,6 +109,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .inline-block {
   display: inline-block; }
+
+.paragraph, .title {
+  font-family: 'Montserrat Alternates', sans-serif; }
+
+.title {
+  font-size: 27.2px; }
+
+.paragraph {
+  padding-top: 2rem; }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
