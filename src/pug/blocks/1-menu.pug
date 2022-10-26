@@ -1,11 +1,16 @@
-header.break-points.header#header
-  nav.navbar#home(class="wow fadeInDown" data-wow-duration="2s")
+header.header#header(class="wow fadeIn" data-wow-duration="2s" data-wow-delay='5s')
+  nav.navbar.break-points#home(class="wow fadeInDown" data-wow-duration="2s" data-wow-delay='5s')
     .navbrand
-      a(href="/").navbrand-link: h2 Titanes Band
-    ul.main-menu.gradient-color#main-menu
-      li.main-menu_item: a.main-menu_link(href="/") Inicio
-      li.main-menu_item: a.main-menu_link(href="#services") Servicios
-      li.main-menu_item: a.main-menu_link(href="#experience") Experiencia
-      li.main-menu_item: a.main-menu_link(href="#contact") Contacto
+      a(href="/").navbrand-link: img(src="img/logo.png", alt="logo")
     .navtoggle#navtoggle.button-cta
-      i.fa.fa-bars
+      .navigation
+        input(type="checkbox" class="navigation__checkbox" id="navi-toggle")
+        label(for="navi-toggle" class="navigation__button"): span.navigation__icon &nbsp;
+        .navigation__background &nbsp;
+        .navigation__nav
+          ul.navigation__list
+            li.navigation__item: a(href="#" class="navigation__link") Titanes
+            li.navigation__item: a(href="#" class="navigation__link") Videos
+            li.navigation__item: a(href="#" class="navigation__link") Descargas
+            li.navigation__item: a(href="#" class="navigation__link") Contacto
+            //- li.navigation__item: a(href="#" class="navigation__link") Book now
