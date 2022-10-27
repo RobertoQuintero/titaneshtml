@@ -1,0 +1,118 @@
+.card{
+  -moz-perspective: 150rem;
+  perspective: 150rem;
+  position: relative;
+  height: 30rem;
+  
+  &__side{
+    height: 100%;
+    
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba($black,.15);
+
+    &--front{
+      background-color: $white;
+    }
+    
+    &--back{
+      transform: rotateY(180deg);
+      
+    }
+  }
+
+  &:hover &__side--front{
+    transform: rotateY(180deg);
+  }
+
+  &:hover &__side--back{
+    transform: rotateY(360deg);
+  }
+
+  &__picture{
+    background-size: cover;
+    height: 20rem;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    
+
+    &--1{
+      background-size: cover;
+      background-position: center;
+    }
+    
+  }
+
+  &__heading{
+    font-size: 1.2rem;
+    line-height: 2;
+    font-weight: 300;
+    text-align: right;
+    text-transform: uppercase;
+    color: $white;
+    position: absolute;
+    top: 10rem;
+    right: 2rem;
+    width: 75%;
+
+    &-span{
+      padding: 1rem 1.5rem;
+      -webkit-box-decoration-break:clone;
+      box-decoration-break: clone;
+      
+    
+    }
+  }
+
+  &__details{
+    padding: 3rem;
+    ul{
+      list-style:none;
+      width: 80%;
+      margin: 0 auto;
+
+      li{
+        text-align: center;
+        font-size: 1rem;
+        padding: 1rem;
+
+        &:not(:last-child){
+          border-bottom: 1px solid $color-grey-light-2;
+        }
+      }
+    }
+  }
+
+  &__cta{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  &__price-box{
+    text-align: center;
+    margin-bottom: 8rem;
+    color: $white;
+  }
+
+  &__price-only{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+
+  &__price-value{
+    font-size: 6rem;
+    font-weight: 100;
+
+  }
+}

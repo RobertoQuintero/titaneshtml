@@ -1,49 +1,20 @@
-// .services{
-//   &-text{
-//     padding: 0.5rem 0;
-//     border-top: 2px solid $accent;
-//     border-bottom: 2px solid $accent;
-//     p{text-indent: 2rem;}
-//   }
-//   @media (min-width:990px) {
-//     display: flex;
-//     justify-content: space-between;
+.section-bio{
+  position: relative;
+  width: 100%;
+  height: auto;
 
-//     &-text{
-//       flex-basis: 60%;
-//     }
-//     &-right{
-//       flex-basis: 30%;
-//       p{
-//         margin-top: 0;
-//       }
-//     }
-//   }
-  
-// }
-// .format{
-//   text-align: justify;
-//   font-size: $fontSize-m;
-//   font-weight: 600;
-//   line-height: 1.6;
-// }
+  &::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient( to bottom, #fff,transparent 15% 85%,#fff), url('https://res.cloudinary.com/dmq9e2wuv/image/upload/v1666890751/bmarg3tnw6g2gpsegwkp.jpg') ;
+    background-size: cover;
+    background-position: center;
+    opacity: .2;
+    z-index: -100;
+  }
+}
 
-// .services-list{
-//   &__item{
-//     margin: 1rem 0 0 1rem;
-//     padding: 1rem 2rem;
-//     background-color: $color-black;
-//     color: $color-white;
-//     font-size: $fontSize-m;
-//     letter-spacing: 1px;
-//     border-radius: 6px;
-//     width: 250px;
-//   }
-//   &__icon{
-//     margin-right: 1rem;
-//   }
-// }
-
-// .button-services{
-//   display: inline-block;
-// }
