@@ -1,0 +1,59 @@
+.card-video{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 2rem;
+  overflow: hidden;
+  box-shadow: 0px 1rem 1.5rem rgba($black, 0.5);
+
+  &__img{
+    width:100%;
+    height: 150px;
+    
+    background-image: url(img/06-rumbao.jpg);
+  }
+
+  &__description{
+    padding: 1rem;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+  }
+
+  &__circle{
+    cursor: pointer;
+    position: absolute;
+    perspective: 150rem;
+    background-color: #fff;
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0px .8rem 1rem rgba($black, 0.2);
+    transition: 1s;
+    
+    &:hover{
+      box-shadow: 0px 1rem 1rem rgba($black, 0.4);
+      transform:  translate(-50%,-50%) scale(1.1);
+      
+    }
+
+    & i{
+      font-size: 2rem;
+      color: #f00;
+      
+    }
+  }
+}
