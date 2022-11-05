@@ -1,0 +1,8 @@
+mixin cardVideo(img,description,link)
+  .card-video__container
+    a(href=`${link}` rel="noopener noreferrer" target='_blank').card-video 
+      .card-video__img(style=`background-image: url(${img});`)
+      .card-video__description
+        p.card-video__text= description
+      .card-video__circle
+        i.fa.fa-youtube-play

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat+Alternates:wght@200;300;400;500;600;700&family=Shadows+Into+Light&display=swap');
 
 
 .paragraph,.title{
@@ -10,4 +10,8 @@
 }
 .paragraph{
   padding-top: 2rem;
+}
+
+.color-white{
+  color: $white;
 }

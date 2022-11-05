@@ -1,0 +1,23 @@
+.titanes-img{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  max-width: 500px;
+  overflow: hidden;
+}
+
+.titanes-img::after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background-image: linear-gradient(to bottom, transparent 25%,$white 40%);
+  
+
+}
+.titanes-source{
+  width: 100%;
+}
