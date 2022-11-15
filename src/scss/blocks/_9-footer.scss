@@ -1,0 +1,49 @@
+.section-footer{
+  background-color: $black;
+  box-shadow: 0 -3px 10px rgba($black,.6);
+}
+
+.social-network{
+  &__container{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: #ff8800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:nth-child(2){
+      margin: 0 1rem;
+    }
+    
+    & i{
+      font-size: 2rem;
+      color: $white;
+    }
+  }
+
+
+}
+
+.footer-text{
+  padding: 1rem 0;
+  text-align: center;
+  background-color: $black;
+  color: $white;
+}
+.author{
+  display: inline-block;
+  color: #ff8800;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+

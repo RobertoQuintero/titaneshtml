@@ -23,6 +23,7 @@ function dropImage() {
   let section = document.querySelector(".section-popimg");
 
   let drop = document.createElement("span");
+  drop.classList.add("drop-span");
   // drop.style.left = `${Math.random() * innerWidth}px`;
   drop.style.top = `${Math.random() * innerHeight}px`;
 

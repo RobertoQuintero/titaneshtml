@@ -1,15 +1,13 @@
 {
-    "ignore": [
-        ".show",
-        ".lightbox-overlay",
-        ".lightbox-container",
-        ".close-modal",
-        ".lightbox-description",
-        ".lightbox-navigation",
-        ".lightbox-image",
-        ".lightbox-navigation__button",
-        ".animation"
-    ],
-    "ignoreSheets": []
-  }
-
+  "ignore": [
+    ".show",
+    ".lightbox-overlay",
+    ".lightbox-container",
+    ".close-modal",
+    ".lightbox-description",
+    ".lightbox-navigation",
+    ".lightbox-image",
+    ".drop-span"
+  ],
+  "ignoreSheets": []
+}
